@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <style>
+      .container-fluid {
+        background-color: bisque;
+      }
+
+      .row {
+        border: 1px solid red;
+      }
+
+      .row div {
+        border: 1px solid black;
+      }
+    </style>
+    <div class="container">
+      <div class="row">
+        <!-- 하나의 row 안에 col 이 다 들어가지 못하면 자동적으로 한 row 가 추가된다. -->
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-2">Col</div>
+
+        <!-- 숫자를 입력하지 않으면 자동으로 너비가 설정된다. -->
+        <div class="col">Col</div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-4">Col</div>
+
+        <!-- 12 열을 넘기면 1 줄이 추가된다. -->
+        <div class="col-10">Col</div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-4">Col</div>
+
+        <!-- 12 열을 넘기면 1 줄이 추가된다. -->
+        <div class="col-10">Col</div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col col-md-4 col-lg-8">Col</div>
+        <div class="col col-md-2 col-lg-4">Col</div>
+      </div>
+
+      <div class="row text-center justify-content-center">
+        <div class="col-4">Col</div>
+        <div class="col-2">Col</div>
+      </div>
+
+      <!-- 행의 수를 설정한다. -->
+      <div class="row text-center row-cols-2">
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+      </div>
+
+      <div class="row text-center row-cols-2">
+        <div class="col">
+          <!-- 열 안에 행과 열을 삽입한다. -->
+          <div class="row">
+            <div class="col">Col</div>
+            <div class="col">Col</div>
+          </div>
+        </div>
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+      </div>
+
+      <!-- padding 을 준다. -->
+      <div class="row text-center p-3">
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+      </div>
+
+      <!-- 열 간의 간격을 조절하는 gutter 를 설정한다. -->
+      <div class="row text-center gx-5">
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+      </div>
+
+      <div class="row text-center">
+        <!-- 요소의 배경색을 변경한다. -->
+        <div class="col bg-primary">Col</div>
+
+        <!-- 요소의 배경색과 글꼴색을 변경한다. -->
+        <div class="col bg-danger text-white">Col</div>
+        <div class="col">Col</div>
+      </div>
+    </div>
+    <div class="container-fluid">Container</div>
+  </body>
+</html>
